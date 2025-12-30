@@ -2,6 +2,17 @@
 
 A Python application for creating local clones of websites for documentation, evidence preservation, and fraud prevention purposes.
 
+[![GitHub Repository](https://img.shields.io/badge/GitHub-wyms%2Fsitecapture-blue?logo=github)](https://github.com/wyms/sitecapture)
+[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+## Quick Links
+
+- 🚀 [Quick Start Guide](QUICK_START.md)
+- 🔒 [GitHub Secrets Setup](GITHUB_SECRETS.md)
+- 🛡️ [Virus Scanning Guide](VIRUS_SCANNING_GUIDE.md)
+- ⚙️ [Detailed Setup](SETUP.md)
+
 ## Purpose
 
 In an age where online fraud is prevalent, this tool helps document and preserve website content for legitimate purposes such as:
@@ -25,12 +36,26 @@ In an age where online fraud is prevalent, this tool helps document and preserve
 
 ## Installation
 
-1. Ensure you have Python 3.7+ installed
+### From GitHub
 
-2. Install dependencies:
 ```bash
+git clone https://github.com/wyms/sitecapture.git
+cd sitecapture
 pip install -r requirements.txt
 ```
+
+### API Key Setup
+
+Copy `.env.example` to `.env` and add your VirusTotal API key:
+
+```bash
+cp .env.example .env
+# Edit .env and add: VIRUSTOTAL_API_KEY=your_key_here
+```
+
+Get a free API key at: https://www.virustotal.com/gui/join-us
+
+For GitHub deployment, see [GitHub Secrets Setup](GITHUB_SECRETS.md)
 
 ## Usage
 
